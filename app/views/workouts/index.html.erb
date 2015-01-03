@@ -1,0 +1,8 @@
+<h1>All of the Workouts</h1>
+
+<% @workouts.each do |workout| %>
+  <h3><%= workout.title %></h3>
+  <div>
+    <p><%= workout.date %></p>
+  </div>
+<% end %>
