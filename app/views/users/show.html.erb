@@ -1,0 +1,8 @@
+<div>Username: <%= @user.email %></div>
+
+<% @user.workouts.each do |workout| %>
+  <div>
+    <p><%= workout.title %></p>
+    <p><%= workout.created_at %></p>
+  </div>
+<% end %>

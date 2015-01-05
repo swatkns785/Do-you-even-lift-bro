@@ -1,0 +1,11 @@
+<h3><%= @workout.title %></h3>
+
+<% @exercises.each do |exercise| %>
+  <div><%= exercise.name %></div>
+<% end %>
+
+
+<div>Fill out the form below to add an exercise.</div>
+<div>
+  <%= render '/exercises/new_exercise_form' %>
+</div>
