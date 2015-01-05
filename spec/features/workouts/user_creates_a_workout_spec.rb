@@ -9,9 +9,8 @@ So that I can add exercises to the workout and keep track of my progress
 Acceptance Criteria
 [x] I must be able to add a workout from anywhere in the app.
 [x] I must be able enter the title and the date of the workout.
-[ ] If I select a day that has yet to occur, I am presented with errors.
 [ ] I must be able to optionally set the duration of my workout
-[ ] If I make errors, I am presented with the appropriate error messages.
+[x] If I make errors, I am presented with the appropriate error messages.
 [x] If I fill out all of the forms correctly, I am redirected to a list of workouts
 
 ) do
@@ -47,7 +46,7 @@ Acceptance Criteria
 
   end
 
-  scenario "user leaves all fields empty", focus: true do
+  scenario "user leaves all fields empty" do
 
     user = FactoryGirl.create(:user)
 
