@@ -51,3 +51,4 @@ gem 'shoulda-matchers', group: [:development, :test], require: false
 gem 'devise'
 gem 'foundation-rails'
 gem 'coveralls', require: false, group: :test
+gem 'validates_timeliness'
