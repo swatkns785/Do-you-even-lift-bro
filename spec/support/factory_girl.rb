@@ -8,14 +8,14 @@ FactoryGirl.define do
   end
 
   factory :workout do
-    sequence(:title) { |n| "The Most Awesome Workout #{n}"}
+    sequence(:title) { |n| "The Most Awesome Workout #{n}" }
     date Date.new(2015, 1, 1)
     description 'I lifted things up and I put them down.'
     association :user
   end
 
   factory :exercise do
-    sequence(:name) { |n| "Bench Press Maximus #{n}"}
+    sequence(:name) { |n| "Bench Press Maximus #{n}" }
     reps 12
     association :workout
     association :user

@@ -4,5 +4,9 @@ Rails.application.routes.draw do
 
   resources :users, only: :show
 
-  resources :workouts, only: [:index, :new, :create]
+  resources :workouts, only: [:index, :new, :create, :show]
+
+  resources :workouts, only: :show do
+    resources :exercises, only: [:new, :create]
+  end
 end

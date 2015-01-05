@@ -1,0 +1,17 @@
+<%= form_for [@workout, @exercise] do |f| %>
+
+<div>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+</div>
+
+<div>
+  <%= f.label :reps, "Repetitions" %>
+  <%= f.select :reps, options_for_select(0..50) %>
+</div>
+
+<p>
+  <%= f.submit "Add Exercise", method: :post %>
+</p>
+
+<% end %>

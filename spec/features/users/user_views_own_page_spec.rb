@@ -7,8 +7,8 @@ I want to view my user page
 So that I can see my personal details
 
 Acceptance Criteria
-[ ] I must be able to reach my user page from anywhere within the app
-[ ] I must see my name (email address)
+[x] I must be able to reach my user page from anywhere within the app
+[x] I must see my name (email address)
 
 ) do
 
@@ -19,7 +19,7 @@ Acceptance Criteria
     click_on "Log in"
   end
 
-  scenario "a user views own user page", focus: true do
+  scenario "a user views own user page" do
 
     user = FactoryGirl.create(:user)
 
